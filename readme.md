@@ -6,6 +6,10 @@ across the globe.
 
 
 ## The Algorithm™
+We may have invented The Algorithm.  The Algorithm consistently finds Vira.
+The Algorithm creates Vira.  The Algorithm is stateless.  The Algorithm is not
+from Jersey.  The Algorithm consistently finds Vira.  This is not The Algorithm.
+This is close.
 
 Data sources:
 
