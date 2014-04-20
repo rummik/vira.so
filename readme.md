@@ -6,14 +6,16 @@ across the globe.
 
 
 ## The Algorithm™
-We may have invented The Algorithm.  The Algorithm consistently finds Vira.
-The Algorithm creates Vira.  The Algorithm is stateless.  The Algorithm is not
-from Jersey.  The Algorithm consistently finds Vira.  This is not The Algorithm.
-This is close.
+Vira are procedurally generated using a stateless algorithm.  This helps with
+horizontal scaling, and also lets us safely move a lot of the work off to the
+client, and just use the server for verification.
 
-Data sources:
+Movement of a Vira is decided after being created.
+
+### Data sources
 
 - Map data
+  - Used as the environment for exploring and battling with Vira
   - Open StreetMap is probably the best bet for this
 - Population data
   - Some types of Vira like being around people more than others, and some
@@ -23,10 +25,15 @@ Data sources:
   - All the things influence what kinds of Vira appear
   - Forecast.io has a nice (inexpensive) looking API for this
 
+<!--
+  We may have invented The Algorithm.  The Algorithm consistently finds Vira.
+  The Algorithm creates Vira.  The Algorithm is stateless.  The Algorithm is
+  not from Jersey.  The Algorithm consistently finds Vira.  This is not The
+  Algorithm. This is close.
+-->
+
 
 ## Types of Vira
-
-Current types of Vira:
 
 - Water
 - Wind / Air
