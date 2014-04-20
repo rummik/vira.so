@@ -10,7 +10,9 @@ Vira are procedurally generated using a stateless algorithm.  This helps with
 horizontal scaling, and also lets us safely move a lot of the work off to the
 client, and just use the server for verification.
 
-Movement of a Vira is decided after being created.
+After a Vira is created it shifts location every 3-15 seconds in a 3-5ft area
+from its previous location for the duration of its existence (5-30 minutes), or
+until it's encountered by a player.
 
 ### Data sources
 
