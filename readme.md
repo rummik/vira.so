@@ -51,4 +51,13 @@ until it's encountered by a player.
 - Poison
 
 
+## Protection against cheating
+Some thought needs to be put into this particular bit.  First thoughts on this
+would be to flag players who abruptly jump locations at very high speeds.  So
+for short distances we should assume walking or some other land transportation,
+and for longer distances we should assume flight.  Adjustments might need to be
+made for high-speed ground transportation, like bullet trains, but this should
+be something we can tweak as time goes on.
+
+
 <!-- TODO: make note of the glitch and viral attributes somewhere -->
