@@ -22,7 +22,10 @@ until it's encountered by a player.
 - Population data
   - Some types of Vira like being around people more than others, and some
     types don't like being around people
-  - From the US it looks like this is freely available from census.gov
+  - Census data
+    - US: [census.gov](http://www2.census.gov/census_2010/)
+    - UK: [ons.gov.uk](http://www.ons.gov.uk/ons/guide-method/census/2011/index.html)
+    - CA: [statcan.gc.ca](http://www12.statcan.gc.ca/census-recensement/index-eng.cfm)
 - Weather data
   - All the things influence what kinds of Vira appear
   - Forecast.io has a nice (inexpensive) looking API for this
