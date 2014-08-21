@@ -10,9 +10,15 @@ Vira are procedurally generated using a stateless algorithm.  This helps with
 horizontal scaling, and also lets us safely move a lot of the work off to the
 client, and just use the server for verification.
 
-After a Vira is created it shifts location every 3-15 seconds in a 3-5ft area
+After a vira is created it shifts location every 3-15 seconds in a 3-5ft area
 from its previous location for the duration of its existence (5-30 minutes), or
-until it's encountered by a player.
+until it's encountered by a player.  Movement is based on the vira's UUID.
+
+Creation and destruction of vira happens on five minute intervals.  We always
+use server time when initializing the algorithm, since the client could
+potentially be off by a minute or two (or more, due to time attacks on other
+games), which could result in a vira being in the wrong location, or no longer
+existing, when the player attempts to attack or capture.
 
 ### Data sources
 
@@ -34,7 +40,7 @@ until it's encountered by a player.
   We may have invented The Algorithm.  The Algorithm consistently finds Vira.
   The Algorithm creates Vira.  The Algorithm is stateless.  The Algorithm is
   not from Jersey.  The Algorithm consistently finds Vira.  This is not The
-  Algorithm. This is close.
+  Algorithm.  This is close.
 -->
 
 
@@ -59,8 +65,8 @@ Some thought needs to be put into this particular bit.  First thoughts on this
 would be to flag players who abruptly jump locations at very high speeds.  So
 for short distances we should assume walking or some other land transportation,
 and for longer distances we should assume flight.  Adjustments might need to be
-made for high-speed ground transportation, like bullet trains, but this should
-be something we can tweak as time goes on.
+made for high-speed ground transportation, like bullet trains, or vacuum tubes,
+but this is something we can tweak as time goes on.
 
 
 <!-- TODO: make note of the glitch and viral attributes somewhere -->
