@@ -1,4 +1,4 @@
- [Vira](http://vira.so)
+ [νιrα](http://vira.so)
 ========================
 Vira will be an augmented reality game revolving around capturing and battling
 virtual monsters ('Vira') with friends, other players in your area, and players
